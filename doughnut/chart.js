@@ -1,7 +1,6 @@
 const ctx = document.getElementById("myChart").getContext('2d');
 
-const type_myChart = 'doughnut'
-
+const type_myChart = 'doughnut' 
 const data = {
   labels: ["%Secteur1", "%Secteur2", "%Secteur3"],
   datasets: [{
@@ -22,6 +21,12 @@ const data = {
 }
 
 const options = {
+  legend: {
+    display: true,
+    labels: {
+      fontColor: 'rgb(255, 99, 132)'
+    }
+  },
   scales: {
     yAxes: [{
       ticks: {
@@ -31,7 +36,7 @@ const options = {
   }
 }
 
-// console.log(ctx)
+console.log(ctx)
 // ctx.canvas.height = 100
 
 
